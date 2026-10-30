@@ -1,0 +1,25 @@
+{
+  "name": "roam-trip-photo-organizer",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "models": "node scripts/download-models.mjs",
+    "dev": "npm run models && vite --host 0.0.0.0",
+    "build": "npm run models && vite build",
+    "preview": "vite preview --host 0.0.0.0",
+    "test": "node --test tests/*.test.js",
+    "test:browser": "playwright test"
+  },
+  "dependencies": {
+    "@fontsource/dm-sans": "5.3.0",
+    "@fontsource/manrope": "5.3.0",
+    "@vladmandic/face-api": "1.7.15",
+    "jszip": "3.10.1"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.56.1",
+    "fake-indexeddb": "6.2.4",
+    "vite": "7.1.7"
+  }
+}
